@@ -36,7 +36,7 @@ function closeModal() {
 function closeModalWithAlert() {
   setTimeout(() => {
     alert('DONE!!!');
-  }, 500);
+  }, 300);
   modal.classList.toggle('toggle-modal');
   modal.classList.add('close-modal');
 }

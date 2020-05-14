@@ -1,6 +1,5 @@
 .container {
   padding-top: 100px;
-  // position: relative;
 
   &__button {
     padding: 20px 50px;
@@ -19,7 +18,6 @@
 
 
 .modal-box {
-  // position: fixed;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,8 +30,6 @@
     background-color: rgba(100, 100, 100, 0.4);
     width: 100vw;
     height: 100%;
-    // left: 0;
-    // z-index: 520;
   }
 
   &__window {
