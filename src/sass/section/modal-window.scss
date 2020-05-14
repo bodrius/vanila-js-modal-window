@@ -1,0 +1,133 @@
+.container {
+  padding-top: 100px;
+  position: relative;
+
+  &__button {
+    padding: 20px 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #5491ce;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__button:hover {
+    box-shadow: 0 0 10px green;
+    font-size: 21px;
+  }
+}
+
+
+.modal-box {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__backdrop {
+    background-color: rgba(100, 100, 100, 0.4);
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    z-index: 520;
+  }
+
+  &__window {
+    box-shadow: 3px 8px 19px 0px rgba(0, 0, 0, 0.6);
+    width: 580px;
+    height: 387px;
+    border-radius: 6px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    animation-duration: 500ms;
+    animation-name: slidein;
+  }
+
+  &__close-button {
+    position: absolute;
+    left: 17px;
+    top: 17px;
+  }
+
+  &__image-warning {
+    position: absolute;
+    top: 37px;
+    right: 226px;
+    width: 130px;
+    height: 123px;
+  }
+
+
+  &__description {
+    font-size: 28px;
+    position: absolute;
+    bottom: 106px;
+    left: 65px;
+    width: 449px;
+    color: #706363;
+  }
+
+  &__button {
+    border: 1px solid #4b4545;
+    width: 208px;
+    height: 40px;
+    color: #706363;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    position: absolute;
+  }
+
+  &__button-cancel {
+    left: 69px;
+    bottom: 45px;
+  }
+
+  &__button-sucsess {
+    right: 69px;
+    bottom: 45px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    border: none;
+  }
+}
+
+
+.toggle-modal {
+  display: none;
+}
+
+.close-modal {
+  animation-duration: 1000ms;
+  animation-name: slideout;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+
+@keyframes slideout {
+  from {
+
+    margin-left: 0%;
+
+  }
+
+  to {
+    display: none;
+    margin-left: 100%;
+  }
+}
